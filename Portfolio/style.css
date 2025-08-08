@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  color: #222;
+  line-height: 1.6;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Hero */
+.hero-content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 50px;
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #6b46c1;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.hero-image img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Titles */
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #6b46c1;
+  margin-bottom: 30px;
+}
+
+/* Projects */
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .project-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.skills-grid span {
+  background-color: #eee;
+  color: #444;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+}
+/* Links Section */
+.links {
+  text-align: center;
+}
+
+.link-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.link-buttons a {
+  background-color: #6b46c1;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.link-buttons a:hover {
+  background-color: #4c3395;
+}
+
+/* Contact */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+form input, form textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+form button {
+  background-color: #6b46c1;
+  color: #fff;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #4c3395;
+}
